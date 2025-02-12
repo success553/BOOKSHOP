@@ -1,0 +1,157 @@
+@import '../../vars.css';
+
+
+*{
+    border: 1px solid yellowgeen;
+}
+.Checkout{
+ 
+     width:95%;
+     background-color: var(--color-bgdark);
+     justify-self: center;
+     justify-content: center;
+     border-radius: 15px;
+     padding:30px;
+     padding-bottom: 50px;
+     margin-bottom: 30px;
+}
+.Checkout .navigateTo{
+    height:50px;
+    width: 100%;
+    text-transform: uppercase;
+}
+.Checkout .navigateTo ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    flex-direction: row;
+    color:var(--color-bglight);
+    font-size: 20px;
+}
+.Checkout .navigateTo ul li{
+    cursor: pointer;
+}
+.Checkout .navigateTo ul li:hover{
+    color:var(--color-btnbg);
+  filter: drop-shadow(0 0 1em var(--color-btnbg));
+}
+.Checkout .navigateTo ul .activeItem{
+    color: var(--color-btnbg);
+    
+}
+.Checkout .container{
+    display:flex;
+}
+.Checkout .container .containerItem{
+    width: 100%;
+    min-height:50px
+}
+.containerItem .contactInformation{
+    padding: 10px;
+    width: 100%;
+    border-radius: 18px;
+    background-color: #00000061;
+    color: var(--color-bglight);
+}
+.containerItem .shippingMethod{
+    width: 100%;
+}
+.shippingMethod h4{
+    color: var(--color-bglight);
+}
+.shippingMethod .shippingForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.shippingForm .groupForm{
+    width:100%;
+    display:flex;
+    gap: 10px;
+
+}
+.groupForm input,textarea,select{
+    height: 80px;
+    background-color: var(--color-bglight);
+    border-radius: 18px;
+    width: 100%;
+    font-size: 25px;
+    padding: 10px;
+
+}
+.groupForm textarea{
+    height: 150px;
+    min-height: 150px;
+    max-height: 150px;
+    background-color: var(--color-bglight);
+    width: 100%;
+    font-size: 20px;
+}
+.groupForm .shippingBtn{
+    height: 70px;
+    background-color: var(--color-btnbg);
+    border-radius: 15px;
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+.groupForm input,.groupForm select,
+.groupForm textarea:focus{
+    outline: none;
+}
+.floatText{
+    float: right;
+}
+
+.containerItem .orderSummery{
+     background-color: #00000061;
+     float: right;
+     width: 500px;
+     min-height: 300px;
+     border-radius: 15px;
+     color: var(--color-bglight);
+     padding:25px
+}
+
+.orderSummeryTable{
+     width: 100%;
+     line-height: 40px;
+
+}
+.containerItem .promoCode{
+    margin-top: 18px;
+  
+    float: right;
+    width: 500px;
+    min-height: 30px;
+
+    color: var(--color-bglight);
+
+    display:flex;
+    gap: 10px;
+}
+.promoCode input{
+    height:60px;
+    width: 80%;
+    outline: none;
+    border-radius: 20px;
+    background-color: white;
+    border: none;
+    padding: 10px;
+    color:rgb(148, 139, 139);
+    font-size: large;
+
+}
+.promoCode button{
+    height:60px;
+    width:20%;
+    outline: none;
+    border-radius: 20px;
+    background-color: rgb(108, 106, 106);
+    border: none;
+
+}

@@ -1,0 +1,242 @@
+@import '../../vars.css';
+
+
+.booksContainer{
+     width:100%;
+     margin-top: 10px;
+}
+.booksContainer .heading{
+     height: 80px;
+     overflow: hidden;
+     width:100%;
+     background-image: url('C:/Users/REPLAY CODE/Desktop/allreact/CODE/CRUZTECH/BIG-BOOKSHELF/assets/Banner.png');
+     background-size: cover;
+   
+}
+.booksContainer .ecommerceContainer{
+    min-height: 400px;
+    background-color: var(--color-bgdark);
+    padding: 20px;
+    margin-top: 18px;
+}
+.ecommerceContainer .filterContainer{
+    min-height: 50px;
+     color: var(--color-bglight);
+     display: flex;
+     gap: 10px;
+     align-content: center;
+     align-items: center;
+     width: 100%;
+
+}
+.filterContainerItem{
+    width:100%;
+    padding: 0px;
+    align-items: center;
+
+}
+.filterContainer .searchHistory{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0;
+}
+.searchHistory .searchHistoryItem{
+     align-content: center;
+     padding: 10px;
+     border-radius: 40px;
+     background-color:rgba(126, 125, 125, 0.82);
+     cursor: pointer;
+}
+.filterContainer .filterSelectBtn{
+     height: 50px;
+     outline: none;
+     border: 2px solid var(--color-bglight);
+     border-radius: 5px;
+     background-color: transparent;
+     width: 50%;
+     float: right;
+     color: var(--color-bglight);
+     font-size: large;
+}
+.searchHistory .filterText{
+    font-size: 25px;
+    font-weight: 600;
+}
+.searchHistory .resultText{
+    font-size: 20px;
+    color: rgba(204, 198, 198, 0.819);
+}
+
+.ecommerceContainer .containerBook{
+    min-height: 400px;
+    display: flex;
+    margin-top:10px ;
+    gap: 10px;
+    
+}
+.fa:before{
+    content:">";
+    font-weight:600;
+    float:right;
+    transform:rotate(90deg)
+}
+.containerBook .containerBookItem{
+          width:80%;
+          min-height: 800px;
+          /* background-color: var(--color-bglight); */
+          border-radius: 20px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 15px;
+         
+}
+.containerBook .SortingContainer{
+    width:20%;
+    /* min-height:180px;
+    max-height: 1020px;
+  overflow: auto; */
+  height:fit-content;
+    background-color: var(--color-bglight);
+    border-radius: 10px;
+    padding: 20px;
+}
+.SortingContainer .sortingLabels{
+     font-weight:700;
+     color: var(--color-bgdark);
+     text-transform: uppercase;
+     letter-spacing: 0.5px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+}
+.SortingContainer ul{
+    list-style-type: none;
+    list-style: none;
+    padding: 0px;
+   
+}
+.SortingContainer .sortByCategory{
+     width: 100%;
+}
+.SortingContainer ul li{
+     font-size: 20px;
+     font-weight: 500;
+}
+.sortByCategory input{
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgba(213, 217, 220, 0.433);
+    color: #a49c9cd1;
+    height: 60px;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+.SortingContainer input[type="checkbox"]{
+     width:30px;
+     height: 25px;
+     border:1px solid #f5b410f9
+}
+.SortingContainer input[type="range"]{
+    width:100%;
+    height: 2px;
+    border:1px solid #f5b410f9;
+    background-color: black;
+
+
+}
+.SortingContainer .sortByYearPublish{
+    width: 100%;
+}
+.sortByYearPublish select{
+     width: 100%;
+     height:60px;
+     border:1px solid var(--color-bgdark);
+     background-color: transparent;
+     font-size: 20px;
+}
+.sortByPrice .priceMin{
+    width:fit-content;
+    height: fit-content;
+    padding:5px;
+    background-color:rgba(212, 206, 206, 0.82);
+    margin:7px; 
+    border-radius:10px;
+    color:rgba(103, 102, 102, 0.82); 
+}
+.sortByPrice .priceMax{
+    width:fit-content;
+    height: fit-content;
+    padding:7px;
+    background-color:rgba(212, 206, 206, 0.82);
+    margin:5px; 
+    border-radius:10px;
+    color: rgba(103, 102, 102, 0.82);   
+}
+
+.containerBook .bookCard{
+    min-height: 577px;
+    width: 100%;
+    background-color: var(--color-bglight);
+    border-radius: 15px;
+    padding: 10px;
+    padding-top: 0px;
+}
+.bookCard .bookCardImage{
+    width:100%;
+    /* height:200px;
+    max-height: 200px; */
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: var(--color-bgdark);
+}
+.bookCard .bookCardImage img{
+    width:100%;
+}
+.bookCard .bookCardHeader{
+    position: relative;
+    top:7%;
+    right: 2%;
+    float: right;
+    
+}
+.bookCard .bookCarddetails{
+    width: 100%;
+}
+.bookCard .bookCarddetails ul{
+    list-style-type: none;
+    list-style: none;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.bookCard .bookCarddetails small{
+    color: rgb(124, 122, 118);
+    font-size: 18px;
+}
+.bookCard .bookCarddetails ul li h5{
+    font-weight: 600;
+ 
+}
+.bookCard .bookCarddetails ul li h4{
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+.bookCard .bookCarddetails ul li button{
+     background-color: transparent;
+     border-radius: 3em;
+     width: fit-content;
+     padding-left:15px;
+     padding-right: 15px;
+    font-size: 15px;
+    height: fit-content;
+}
+
+/*  cellspacing cellpadding height width bgcolor align color colspan rowspan valign*/
+
+ 

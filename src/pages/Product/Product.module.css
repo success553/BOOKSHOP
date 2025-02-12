@@ -1,0 +1,236 @@
+@import '../../vars.css';
+
+ .product{
+    width:95%;
+    padding:25px;
+    background-color: var(--color-bgdark);
+    justify-self:center;
+    border-radius:15px;
+ }
+ .product .navigation{
+     width:100%;
+ }
+
+ .product .navigation ul{
+     padding:0px;
+     list-style:none;
+     display:flex;
+     flex-direction:row;
+     gap:20px;
+     color: var(--color-bglight);
+     font-weight:600;
+ }
+ .navigation a{
+     text-decoration:none;
+     color:white;
+ }
+ .navigation a:hover{
+    text-decoration:none;
+    color: var(--color-btnbg);
+    
+  filter: drop-shadow(0 0 2em rgba(240, 181, 16, 0.67));
+}
+
+ .productContainer{
+     width:100%;
+     height:fit-content;
+    display:flex;
+    gap:10px;
+    margin:10px;
+ }
+ .productContainer .productContainerItem{
+    width:100%;
+      display:flex;
+      gap:10px;
+      
+ }
+ .productContainerItem .productImageContainer{
+     width:80%;
+     border-radius: 15px;
+     padding:0px;
+     overflow:hidden;
+}
+.productContainerItem .productImageContainer img{
+    width:100%;
+    height:100%;
+    
+}
+.productContainer .productDetails{
+    width:100%;
+     color: var(--color-bglight)
+}
+.productContainer .productDetails ul{
+    list-style:none;
+    padding: 0px;
+    line-height:30px;
+}
+.productContainer .productDetails ul li button{
+   border:2px solid var(--color-btnbg);
+   outline:none;
+   height:fit-content;
+   width:fit-content;
+   color: var(--color-btnbg);
+   background-color: var(--color-bgdark);
+
+   padding:8px;
+   border-radius:10px;
+   padding-left:15px;
+   padding-right:15px;
+}
+.productContainer .productDetails ul li  button:hover{
+    
+  filter: drop-shadow(0 0 1em rgba(240, 181, 16, 0.67));
+}
+.productDetails small{
+     color:rgb(132, 128, 128);
+     font-size:18px
+}
+
+ .productContainer .productDetails ul li .buy{
+    background-color: var(--color-btnbg);
+    color: #000000;
+ }
+
+
+ .productContainerItem .summeryPlotContainer{
+    justify-self:end;
+    padding:10px;
+    width: 100%;
+ }
+ .productContainerItem .summeryPlot{
+     background-color:var(--color-bglight);
+     min-height:200px;
+     border-radius:10px;
+     margin-bottom:10px;
+     width:80%;
+     padding:20px;
+     justify-self:right;
+ }
+ .summeryPlot h2{
+
+ }
+ .productContainerItem .summeryPlotReception{
+    background-color:var(--color-bglight);
+    min-height:74px;
+    border-radius:10px;
+    margin-bottom:10px;
+    width:80%;
+    padding:20px;
+    align-content:center;
+    justify-self:right;
+ }
+ 
+ .list small{
+      float:right;
+ }
+
+ .alsoLikeContainer{
+     width:95%;
+     justify-self:center;
+     margin-top:20px; 
+     height:fit-content; 
+ }
+ .alsoLikeContainer .alsoLikeLabel{
+      font-weight:700;
+
+ }
+ .alsoLikeContainer .alsoLikeBookContainer{
+     width:100%;
+     display:grid;
+     grid-template-columns:repeat(6, 1fr);
+     gap:5px;
+     height:360px;
+
+ }
+ .alsoLikeBookContainer .alsoLikeBookContainerItem{
+     height:350px;
+     width:100%;
+     border-radius:15px;
+     box-shadow:0 1px 3em 2px rgba(0,0,0,0.1);
+     background-color:white;
+     padding:10px;
+ }
+ .alsoLikeBookContainerItem:hover{
+    box-shadow:0 1px 3em 2px rgba(237, 131, 9, 0.2);
+    margin-top:-15px;
+    width:90%;
+ }
+ .alsoLikeBookContainer .booksOfInterestImage{
+    width:100%;
+    height: 80%;
+    padding-left:2px;
+    padding-right:2px;
+    border-radius:10px;
+ }
+ .alsoLikeBookContainer .booksOfInterestImage img{
+    width:100%;
+    height:100%;
+    border-radius:10px;
+ }
+ .booksOfInterestDetail ul{
+     list-style:none;
+     padding:0;
+ }
+
+ /**/
+
+  .readersReviewContainerLabel{
+      font-weight:700;
+
+ }
+  .bookReviewContainer{
+     width:100%;
+     display:grid;
+     grid-template-columns:repeat(2, 1fr);
+     gap:5px;
+     margin-bottom:20px;
+
+ }
+ .bookReviewContainer .bookReviewContainerItem{
+     height:300px;
+     width:100%;
+     border-radius:15px;
+     box-shadow:0 1px 3em 2px rgba(0,0,0,0.1);
+     background-color:white;
+     padding:20px;
+ }
+
+ .collapseBtn{
+    float:right;
+    border:none;
+    outline:none;
+    background:none;
+ }
+
+
+ /* review */
+
+ .reviewUserDetails{
+     width:100%;
+     height:fit-content;
+     display:flex;
+     gap:15px;
+     align-items:center;
+
+ }
+ .reviewUserDetails .reviewUserImage{
+    border-radius:50%;
+    height:60px;
+    width:60px;
+    overflow:hidden;
+ }
+ .reviewUserDetails .reviewUserImage img{
+    width:inherit;
+ }
+ .reviewUserDetails .reviewUserDateOfReview{
+     float:right;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.0015em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+ }
