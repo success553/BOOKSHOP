@@ -3,7 +3,7 @@
 .header{
     
 width: 95%;
-height: 433px;
+height: fit-content;
 top: 80px;
 gap: 32px;
 justify-self: center;
@@ -86,8 +86,38 @@ color: var(--color-btnbg);
 background-color: var(--color-bgdark);
 
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 830px) {
         .header{
             width: 100%;
+            height:fit-content;
         }
+
+        .containerCarouselItem .text{
+            width: 90%;
+        height: 172px;
+        gap: 20px;
+        opacity: 0px;
+        
+        }
+        .containerCarouselItem .text h1{
+        
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 30px;
+
+        }
+        .containerCarouselItem .text p{
+        
+        font-size: 20px;
+     
+        
+        }
+        .header .containerCarousel{
+            display: flex;
+            flex-direction:row;
+            gap: 8px;
+            
+            
+      }
+
 }

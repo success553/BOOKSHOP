@@ -70,7 +70,7 @@ html{
 }
 .navbar-nav{
   /* width: Hug (456px)px;*/
-margin-left:150px;
+margin-left:100px;
 gap: 32px;
 opacity: 0px;
 align-content: center;
