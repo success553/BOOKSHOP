@@ -70,16 +70,14 @@ html{
 }
 .navbar-nav{
   /* width: Hug (456px)px;*/
-margin-left:100px;
 gap: 32px;
 opacity: 0px;
 align-content: center;
 
 }
 .offcanvas .offcanvas-body .navbar-nav{
-  margin-left:10px;
-gap: 32px;
-opacity: 0px;
+  margin-left:5px;
+gap: 25px;
 align-content: center;
 color: var(--color-bglight);
 font-size: larger;
